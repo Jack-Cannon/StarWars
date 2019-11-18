@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWars.Views.PeoplePage">
+    <ContentPage.Content>
+
+        <CollectionView ItemsSource="{Binding People}" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding name}" FontSize="Title" TextColor="Black" />
+                        <Label Text="{Binding birth_year}" FontSize="Subtitle"  TextColor="DarkGray" />
+                    </StackLayout>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>
