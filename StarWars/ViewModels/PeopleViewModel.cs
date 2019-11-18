@@ -12,7 +12,7 @@ namespace StarWars.ViewModels
     {
         public ObservableCollection<Person> People { get; set; }
         public Command LoadItemsCommand { get; set; }
-        public IReadOnlyDataStore<Person> DataStore => new PeopleDataStore(); //DependencyService.Get<IReadOnlyDataStore<Person>>();
+        public PeopleDataStore DataStore => new PeopleDataStore(); //DependencyService.Get<IReadOnlyDataStore<Person>>();
 
         public PeopleViewModel()
         {

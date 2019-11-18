@@ -7,7 +7,8 @@
         <CollectionView ItemsSource="{Binding People}" >
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout>
+
+                    <StackLayout Spacing="8" Padding="8">
                         <Label Text="{Binding name}" FontSize="Title" TextColor="Black" />
                         <Label Text="{Binding birth_year}" FontSize="Subtitle"  TextColor="DarkGray" />
                     </StackLayout>
