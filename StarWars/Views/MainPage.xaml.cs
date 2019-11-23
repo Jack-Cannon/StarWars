@@ -36,6 +36,13 @@ namespace StarWars.Views
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
+                    case (int)MenuItemType.Starships:
+                        MenuPages.Add(id, new NavigationPage(new StarshipPage()));
+                        break;
+                    case (int)MenuItemType.Planets:
+                        MenuPages.Add(id, new NavigationPage(new PlanetsPage()));
+                        break;
+
                 }
             }
 

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarWars.Views.PlanetsPage">
+    <ContentPage.Content>
+
+        <CollectionView ItemsSource="{Binding Planets}" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackLayout Spacing="8" Padding="8">
+                        <Label Text="{Binding name}" FontSize="Title" TextColor="Black" />
+                        <Label Text="{Binding rotation_period}" FontSize="Subtitle"  TextColor="DarkGray" />
+                    </StackLayout>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>
